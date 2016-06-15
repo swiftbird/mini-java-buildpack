@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# This will create the filesystem for Java and deploy the JVM
+set -e            # fail fast
+set -o pipefail   # do not ignore exit codes when piping output
+# set -x          # enable debugging
+
+# Configure directories
+build_dir=$1
+cache_dir=$2
+
+echo "Build Dir is " ${build_dir}
+echo "Cache Dir is " ${cache_dir}
