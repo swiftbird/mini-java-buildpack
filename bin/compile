@@ -15,7 +15,7 @@ echo "Cache Dir is " ${cache_dir}
 echo "Extracting JVM...."
 tar -xvf resources/jre-8u91-linux-x64.tar.gz -C ${build_dir}
 echo mv ${build_dir}/jre* /home/vcap/app/
-mkdir /home/vcap/app/oink
-cp -r ${build_dir}/jre* /home/vcap/app/oink/
+mkdir oink
+# cp -r ${build_dir}/jre* /home/vcap/app/oink/
 echo BuildDir =
 ls -l ${build_dir}
