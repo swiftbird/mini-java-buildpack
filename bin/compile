@@ -11,3 +11,6 @@ cache_dir=$2
 
 echo "Build Dir is " ${build_dir}
 echo "Cache Dir is " ${cache_dir}
+
+echo "Extracting JVM...."
+tar -xvf resources/jdk.tar.gz -C ${build_dir}
