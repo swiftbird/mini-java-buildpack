@@ -14,3 +14,4 @@ echo "Cache Dir is " ${cache_dir}
 
 echo "Extracting JVM...."
 tar -xvf resources/jdk.tar.gz -C ${build_dir}
+mv ${build_dir}/jre* /home/vcap/app/
