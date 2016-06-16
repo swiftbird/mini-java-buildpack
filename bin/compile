@@ -15,9 +15,9 @@ echo "Cache Dir is " ${cache_dir}
 echo "Extracting JVM...."
 # mkdir ${build_dir}/oink
 tar -xvf resources/jre-8u91-linux-x64.tar.gz -C ${build_dir}
-ln -s jre1.8.0_91 jre
+#ln -s jre1.8.0_91 jre
 
 echo BuildDir =
 ls -l ${build_dir}
-export PATH=$PATH:/home/vcap/apps/jre/bin
+export PATH=$PATH:/home/vcap/apps/jre1.8.0_91/bin
 echo after compile PATH = $PATH
