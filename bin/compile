@@ -19,3 +19,5 @@ ln -s jre1.8.0_91 jre
 
 echo BuildDir =
 ls -l ${build_dir}
+export PATH=$PATH:/home/vcap/apps/jre/bin
+echo after compile PATH = $PATH
