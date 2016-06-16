@@ -13,8 +13,9 @@ echo "Build Dir is " ${build_dir}
 echo "Cache Dir is " ${cache_dir}
 
 echo "Extracting JVM...."
-mkdir ${build_dir}/oink
+# mkdir ${build_dir}/oink
 tar -xvf resources/jre-8u91-linux-x64.tar.gz -C ${build_dir}
+ln -s ${build_dir}/jre1.8.0_91 ${build_dir}/jre
 
 echo BuildDir =
 ls -l ${build_dir}
