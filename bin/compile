@@ -20,7 +20,6 @@ echo "-----> BuildDir listing = "
 ls -l ${build_dir}
 # put an env script to set java in the path
 
-echo export HOME=/app >> ${build_dir}/.profile.d/javaenv.sh
-echo export PATH=$PATH:$HOME/jre1.8.0_91/bin:$HOME >> ${build_dir}/.profile.d/javaenv.sh
+echo export PATH=$PATH:/app/jre1.8.0_91/bin:/app > ${build_dir}/.profile.d/javaenv.sh
 
 echo after compile PATH = $PATH
