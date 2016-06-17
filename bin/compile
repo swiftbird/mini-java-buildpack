@@ -14,9 +14,11 @@ echo "Cache Dir is " ${cache_dir}
 
 echo "Extracting JVM...."
 tar -xf resources/jre-8u91-linux-x64.tar.gz -C ${build_dir}
-#ln -s jre1.8.0_91 jre
 
+# Modify to put the path stuff in the .profile directory.  Put a .sh in there and it should run
 echo BuildDir =
 ls -l ${build_dir}
-export PATH=$PATH:/home/vcap/apps/jre1.8.0_91/bin
+# put an env script to set java in the path
+echo export export HOME=/app;export PATH=$PATH:$HOME/jre1.8.0_91/bin:$HOME > ${build_dir}/javaenv.sh
+
 echo after compile PATH = $PATH
